@@ -14,9 +14,9 @@ const Footer = () => {
             <div>
             <h3> Connect from SocialMedia</h3>
                 <ul>
-                    <a href='#'><li>Facebook</li></a>
-                    <a href='#'><li>Instragram</li></a>
-                    <a href='#'><li>TikTok</li></a>
+                    <a href='/'><li>Facebook</li></a>
+                    <a href='/'><li>Instragram</li></a>
+                    <a href='/'><li>TikTok</li></a>
                 </ul>
             </div>
             <div className='contact-info'>

@@ -3,6 +3,7 @@ import logo from "../Images/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars,faXmark} from '@fortawesome/free-solid-svg-icons'
 import './Nav.css'
+import { Link } from 'react-router-dom';
 const Nav = () => {
     const [menuOpen,setMenuOpen]=useState(false);
     const [toggleIcon,setToggleIcon]=useState(faBars);
@@ -24,23 +25,23 @@ const Nav = () => {
         </div>
        
         <ul className='links'>
-            <li>
-                <a href='/' >Home</a>
+        <li>
+                <Link to='/' >Home</Link>
             </li>
             <li>
-                <a href='/' >About</a>
+                <Link to='/' >About</Link>
             </li>
             <li>
-                <a href='/' >Service</a>
+                 <Link to='/'>Service</Link>
             </li>
             <li>
-                <a href='/' >Menu</a>
+                <Link to='/' >Menu</Link>
             </li>
             <li>
-                <a href='/' >Rersvation</a>
+                <Link to='/' >Rersvation</Link>
             </li>
             <li>
-                <a href='/' >Order Online</a>
+                <Link to='/'>Order Online</Link>
             </li>
         </ul>
         <a href='/' class='login' >Login</a>
@@ -50,25 +51,25 @@ const Nav = () => {
         <div className={`dropdown-menu ${menuOpen ? 'show' : ''}`} >
             
             <li>
-                <a href='/' onClick={handleDropItem} >Home</a>
+                <Link to='/' onClick={handleDropItem} >Home</Link>
             </li>
             <li>
-                <a href='/' onClick={handleDropItem} >About</a>
+                <Link to='/about'onClick={handleDropItem} >About</Link>
             </li>
             <li>
-                <a href='/' onClick={handleDropItem} >Service</a>
+                 <Link to='/service' onClick={handleDropItem} >Service</Link>
             </li>
             <li>
-                <a href='/' onClick={handleDropItem} >Menu</a>
+                <Link to='/menu' onClick={handleDropItem} >Menu</Link>
             </li>
             <li>
-                <a href='/' onClick={handleDropItem} >Rersvation</a>
+                <Link to='/booking' onClick={handleDropItem} >Rersvation</Link>
             </li>
             <li>
-                <a href='/' onClick={handleDropItem} >Order Online</a>
+                <Link to='/order' onClick={handleDropItem} >Order Online</Link>
             </li>
             <li>
-                <a href='/'class='login'onClick={handleDropItem} >Login</a>
+                <Link to='/login'class='login'onClick={handleDropItem} >Login</Link>
             </li>
         </div>
     </nav>
